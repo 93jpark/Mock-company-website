@@ -4,14 +4,8 @@ html {
     color: white;
 }
 
-a {
-    text-decoration: none;
-    color: white;
-    font-size: 1.5em;
-}
-
-a:hover {
-    color: black;
+header {
+    margin: 1% 1%;
 }
 
 nav {
@@ -38,26 +32,19 @@ nav {
     background-color: RGB(64,113,154);
 }
 
-table {
-    margin: auto;
-}
-
-th {
-    border: solid black 1px;
-}
-
-td {
-    border: solid black 1px;
-}
-
-table tr td img {
-    width: 100%;
-    height: 200px;
-}
-
 #logo {
     width: 100px;
     padding-right: 3%;
+}
+
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    color: black;
 }
 
 #product_img {
@@ -65,9 +52,6 @@ table tr td img {
     height: 300px;
 }
 
-header {
-    margin: 1% 1%;
-}
 
 main {
     margin: auto;
@@ -78,31 +62,4 @@ main {
     text-align: center;
     color: white;
     background-color: RGB(30,32,35)
-}
-
-hr {
-    width: 100%;
-    margin-top: 50px;
-    margin-bottom: 50px;
-}
-
-p {
-    width: 70%;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-}
-
-img {
-    width: 200px;
-    height: auto;
-}
-
-#inven_table td, th {
-    width: 150px;
-    height: 30px;
-}
-
-#inven_table th {
-    background-color: grey;
 }
