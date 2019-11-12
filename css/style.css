@@ -1,0 +1,108 @@
+html {
+    font-family: 'Roboto Mono', monospace;
+    background-color: black;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.5em;
+}
+
+a:hover {
+    color: black;
+}
+
+nav {
+    width: 100%;
+    height: 10%;
+    display: inline-block;
+    background-color: RGB(43,45,48);
+}
+
+.navbar {
+    float: left;
+    padding: 15px;
+    color: white;
+    text-align: center;
+}
+
+.nav_menu {
+    width: 10%;
+    margin-top: 2.5%;
+    float: inline-end;
+}
+
+.nav_menu:hover {
+    background-color: RGB(64,113,154);
+}
+
+table {
+    margin: auto;
+}
+
+th {
+    border: solid black 1px;
+}
+
+td {
+    border: solid black 1px;
+}
+
+table tr td img {
+    width: 100%;
+    height: 200px;
+}
+
+#logo {
+    width: 100px;
+    padding-right: 3%;
+}
+
+#product_img {
+    width: 400px;
+    height: 300px;
+}
+
+header {
+    margin: 1% 1%;
+}
+
+main {
+    margin: auto;
+    padding: 50px 50px;
+    text-align: center;
+    width: 90%;
+    height: 100%;
+    text-align: center;
+    color: white;
+    background-color: RGB(30,32,35)
+}
+
+hr {
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+p {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+img {
+    width: 200px;
+    height: auto;
+}
+
+#inven_table td, th {
+    width: 150px;
+    height: 30px;
+}
+
+#inven_table th {
+    background-color: grey;
+}
