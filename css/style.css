@@ -15,6 +15,10 @@ nav {
     background-color: RGB(43,45,48);
 }
 
+nav table {
+    width: 80%;
+}
+
 .navbar {
     float: left;
     padding: 15px;
@@ -22,11 +26,20 @@ nav {
     text-align: center;
 }
 
-.nav_menu {
-    width: 10%;
-    margin-top: 2.5%;
-    float: inline-end;
+.nav_btn {
+    float: right;
+    margin-right: 10px;
+    padding-top: 5px;
 }
+
+.nav_menu {
+    margin-top: 2.5%;
+    padding-left: 12px;
+    padding-right: 12px;
+    line-height: 5em;
+    text-align: center;
+}
+
 
 .nav_menu:hover {
     background-color: RGB(64,113,154);
