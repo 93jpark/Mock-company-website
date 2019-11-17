@@ -1,0 +1,37 @@
+html {
+    font-family: 'Inconsolata', monospace;
+    height: 100%;
+}
+
+i {
+    padding: 10px;
+}
+
+main {
+    text-align: center;
+    padding: 5%;
+    background: grey;
+}
+
+#nav_company_name {
+    padding-left: 10px;
+}
+
+#nav_register {
+    margin: 0px auto 0px auto;
+    color: white;
+}
+#about_img{
+  left: 0px;
+  top: 0px;
+  width: 30%;
+  height: 50%;
+
+}
+ul{
+  float: left;
+  font-size: 40px;
+}
+p{
+  font-size: 20px;
+}
