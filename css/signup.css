@@ -1,0 +1,14 @@
+.form-signup {
+    min-width: 50%;
+    width: 50%;
+}
+
+.form-signin {
+    min-width: 50%;
+    width: 50%;
+}
+
+.form-label-group {
+    text-align: left;
+    margin-bottom: 3%;
+}
