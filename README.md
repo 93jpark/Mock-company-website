@@ -10,7 +10,7 @@ The client has a catering business and wants to create a web page related to his
 
 # Team Members and team name
 Team Name: K-IT
-Team Member: Taeho Kim, Joonwoo Park
+Team Member: Taeho Kim, Joonwoo Park, Paul Meloche
 
 # Expectations and purpose
 This web pages will increase the convenience of the client’s business. So far, the client has been working by only using own phone, but if web pages are made, the client can manage own business more easily by using web pages. This web pages have a number of functions, for example, looking up Items, reservation, set the schedule etc. Also it can be one of the ways to contact customers who want to use client’s service.
