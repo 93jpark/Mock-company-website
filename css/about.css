@@ -1,0 +1,31 @@
+
+
+.top_images {
+    border-radius: 2%;
+    
+}
+
+#top_img {
+    border-radius: 2%;
+    width: 100%;
+}
+
+.img_food {
+    padding: 1%;
+    border-radius: 2%;
+}
+
+.card {
+    margin: 0.5%;
+    background-color: lightgrey;
+}
+
+.card-img-top {
+    margin-top: 10px;
+    border-radius: 2%;
+    height: 200px;
+}
+
+.card-body .btn {
+    width: 100%;
+}
