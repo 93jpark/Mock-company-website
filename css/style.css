@@ -3,6 +3,10 @@ html {
     height: 100%;    
 }
 
+i {
+    padding: 10px;
+}
+
 main {
     text-align: center;
     padding: 5%;
@@ -16,8 +20,4 @@ main {
 #nav_register {
     margin: 0px auto 0px auto;
     color: white;
-}
-
-i {
-    padding: 10px;
 }
