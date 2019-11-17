@@ -1,78 +1,23 @@
 html {
-    font-family: 'Roboto Mono', monospace;
-    background-color: black;
-    color: white;
+    font-family: 'Inconsolata', monospace;    
+    height: 100%;    
 }
-
-header {
-    margin: 1% 1%;
-}
-
-nav {
-    width: 100%;
-    height: 10%;
-    display: inline-block;
-    background-color: RGB(43,45,48);
-}
-
-nav table {
-    width: 80%;
-}
-
-.navbar {
-    float: left;
-    padding: 15px;
-    color: white;
-    text-align: center;
-}
-
-.nav_btn {
-    float: right;
-    margin-right: 10px;
-    padding-top: 5px;
-}
-
-.nav_menu {
-    margin-top: 2.5%;
-    padding-left: 12px;
-    padding-right: 12px;
-    line-height: 5em;
-    text-align: center;
-}
-
-
-.nav_menu:hover {
-    background-color: RGB(64,113,154);
-}
-
-#logo {
-    width: 100px;
-    padding-right: 3%;
-}
-
-
-a {
-    text-decoration: none;
-    color: white;
-}
-
-a:hover {
-    color: black;
-}
-
-#product_img {
-    width: 400px;
-    height: 300px;
-}
-
 
 main {
-    margin: auto;
-    padding: 50px 50px;
     text-align: center;
-    width: 90%;
-    height: 100%;
-    text-align: center;
+    padding: 5%;
+    background: grey;
+}
+
+#nav_company_name {
+    padding-left: 10px;
+}
+
+#nav_register {
+    margin: 0px auto 0px auto;
     color: white;
-    background-color: RGB(30,32,35)
+}
+
+i {
+    padding: 10px;
 }
