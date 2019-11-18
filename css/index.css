@@ -1,6 +1,4 @@
-/* GLOBAL STYLES
--------------------------------------------------- */
-/* Padding below the footer and lighter body text */
+
   .carousel {
     margin-bottom: 4rem;
   }
@@ -8,11 +6,19 @@
   .carousel-caption {
     bottom: 3rem;
     z-index: 10;
+    color: black;
+    
   }
   
   .carousel-item {
     height: 32rem;
   }
+
+  .carousel-item img {
+    opacity: 0.3;
+    border-radius: 2%;
+  }
+
   .carousel-item > img {
     position: absolute;
     top: 0;
@@ -34,9 +40,6 @@
   }
   
   
-  /* Featurettes
-  ------------------------- */
-  
   .featurette-divider {
     margin: 5rem 0; /* Space out the Bootstrap <hr> more */
   }
@@ -48,9 +51,6 @@
     letter-spacing: -.05rem;
   }
   
-  
-  /* RESPONSIVE CSS
-  -------------------------------------------------- */
   
   @media (min-width: 40em) {
     /* Bump up size of carousel content */
