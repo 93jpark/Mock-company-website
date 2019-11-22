@@ -1,5 +1,14 @@
-console.log("connected");
+console.log("signup.js connected");
 
-$("#btnSignup").click(function(){
-    alert("it is clicked");
-});
+
+
+function checkFillOut(){
+    var 
+    $("#firstName")
+}
+
+window.onload = function() {
+
+    $("#btnSignup").onclick = this.checkFillOut();
+    
+};
