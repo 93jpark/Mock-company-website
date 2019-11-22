@@ -1,0 +1,304 @@
+  <!DOCTYPE html>
+  <html>
+      <head>
+          <title>THE COMPANY</title>
+          <!--Google font-->
+          <link href="https://fonts.googleapis.com/css?family=Inconsolata&display=swap" rel="stylesheet">
+          <!--Common CSS for header-->
+          <link rel="stylesheet" href="./css/style.css">
+          <!--jQuery-->
+          <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+          <!--ajax-->
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+          <!--Bootstrap-->
+          <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+          <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+          <!--font awesome for icons-->
+          <script src="https://kit.fontawesome.com/7665b13397.js"></script>
+      </head>
+      <body>
+        <header class="header">
+          <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                  <div class="container">
+                      <a class="navbar-brand" href="index.html"><i class="fas fa-utensils"></i> COMPANY</a>
+                      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                          <span class="navbar-toggler-icon"></span>
+                      </button>
+      
+                      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                          <div class="navbar-nav mr-auto">
+                              <a class="nav-item nav-link active" href="index.html">Home </a>
+                              <a class="nav-item nav-link" href="./pages/about.html">About </a>
+                              <a class="nav-item nav-link" href="./pages/product.html">Product </a>
+                              <a class="nav-item nav-link" href="./pages/reference.html">Reference </a>
+                              
+                              <li class="nav-item dropdown">
+                                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Member</a>
+                                  <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                      <a class="dropdown-item" href="./pages/order.html">Order</a>
+                                      <a class="dropdown-item" href="./pages/invoice.html">Invoice</a>
+                                      <a class="dropdown-item" href="./pages/utility.html">Utility</a>
+                                  </div>
+                              </li>
+                          </div>
+                          <div class="navbar-nav navbar-right">
+                                  <a class="nav-item nav-link active" href="./pages/signup.html"><i class="fas fa-user-plus"></i>Signup </a>
+                                  <a class="nav-item nav-link active" href="./pages/signin.html"><i class="fas fa-sign-in-alt"></i>Login </a>
+                          </div>
+                      </div>
+                  </div>
+              </nav>
+          </header>
+          <main>
+
+          <form>
+              <br>
+
+              <h1>The Company Order Calculator&nbsp;</h1>
+              <br>
+			                        
+  <table border="1" style="width:100%">
+    <tr>
+      <th>Desserts</th>
+      <th>Feeds (# of people)</th> 
+      <th>Total</th>
+    </tr>
+    <tr>
+      <td>Chocolate Mousse</td>
+      <td><form>
+    <input type="radio" name="quantity1" value="10" checked> 10
+          <input type="radio" name="quantity2" value="15" checked> 15
+          <input type="radio" name="quantity3" value="20" checked> 20<br>
+    <input type="radio" name="quantity4" value="25"> 25
+    <input type="radio" name="quantity5" value="other"> 30 <br>
+          <button type="button" onclick="alert('Hello World!')">Calculate</button>
+  </form> </td>
+      <td>50</td>
+    </tr>
+    <tr>
+      <td>Molten Cake</td>
+      <td><form>
+    <input type="radio" name="quantity1" value="10" checked> 10
+          <input type="radio" name="quantity2" value="15" checked> 15
+          <input type="radio" name="quantity3" value="20" checked> 20<br>
+    <input type="radio" name="quantity4" value="25"> 25
+    <input type="radio" name="quantity5" value="other"> 30 <br>
+          <button type="button" onclick="alert('Hello World!')">Calculate</button>
+  </form> </td>
+      <td>94</td>
+    </tr>
+    <tr>
+      <td>Hot Fudge Sundae</td>
+      <td><form>
+    <input type="radio" name="quantity1" value="10" checked> 10
+          <input type="radio" name="quantity2" value="15" checked> 15
+          <input type="radio" name="quantity3" value="20" checked> 20<br>
+    <input type="radio" name="quantity4" value="25"> 25
+    <input type="radio" name="quantity5" value="other"> 30 <br>
+          <button type="button" onclick="alert('Hello World!')">Calculate</button>
+  </form> </td>
+      <td>80</td>
+    </tr>
+      <tr>
+      <td>Chocolate and Caramel layered Cake</td>
+      <td><form>
+    <input type="radio" name="quantity1" value="10" checked> 10
+          <input type="radio" name="quantity2" value="15" checked> 15
+          <input type="radio" name="quantity3" value="20" checked> 20<br>
+    <input type="radio" name="quantity4" value="25"> 25
+    <input type="radio" name="quantity5" value="other"> 30 <br>
+          <button type="button" onclick="alert('Hello World!')">Calculate</button>
+  </form> 
+          </td>
+          <td>55</td>
+      </tr>
+
+  </table>
+  <table border="1" style="width:100%">
+    <tr>
+      <th>Appetizers</th>
+      <th>Feeds (# of people)</th> 
+      <th>Total</th>
+    </tr>
+    <tr>
+      <td>Potato Skins</td>
+      <td><form>
+    <input type="radio" name="quantity1" value="10" checked> 10
+          <input type="radio" name="quantity2" value="15" checked> 15
+          <input type="radio" name="quantity3" value="20" checked> 20<br>
+    <input type="radio" name="quantity4" value="25"> 25
+    <input type="radio" name="quantity5" value="other"> 30 <br>
+          <button type="button" onclick="alert('Hello World!')">Calculate</button>
+  </form> </td>
+      <td>50</td>
+    </tr>
+    <tr>
+      <td>Pigs in a Blanket</td>
+      <td><form>
+    <input type="radio" name="quantity1" value="10" checked> 10
+          <input type="radio" name="quantity2" value="15" checked> 15
+          <input type="radio" name="quantity3" value="20" checked> 20<br>
+    <input type="radio" name="quantity4" value="25"> 25
+    <input type="radio" name="quantity5" value="other"> 30 <br>
+          <button type="button" onclick="alert('Hello World!')">Calculate</button>
+  </form> </td>
+      <td>94</td>
+    </tr>
+    <tr>
+      <td>Another App</td>
+      <td><form>
+    <input type="radio" name="quantity1" value="10" checked> 10
+          <input type="radio" name="quantity2" value="15" checked> 15
+          <input type="radio" name="quantity3" value="20" checked> 20<br>
+    <input type="radio" name="quantity4" value="25"> 25
+    <input type="radio" name="quantity5" value="other"> 30 <br>
+          <button type="button" onclick="alert('Hello World!')">Calculate</button>
+  </form> </td>
+      <td>80</td>
+    </tr>
+      <tr>
+      <td>Another App</td>
+      <td><form>
+    <input type="radio" name="quantity1" value="10" checked> 10
+          <input type="radio" name="quantity2" value="15" checked> 15
+          <input type="radio" name="quantity3" value="20" checked> 20<br>
+    <input type="radio" name="quantity4" value="25"> 25
+    <input type="radio" name="quantity5" value="other"> 30 <br>
+          <button type="button" onclick="alert('Hello World!')">Calculate</button>
+  </form> 
+          </td>
+          <td>55</td>
+      </tr>
+  </table>
+                      <br>
+  <table border="1" style="width:100%">
+    <tr>
+      <th>Main Course</th>
+      <th>Feeds (# of people)</th> 
+      <th>Total</th>
+    </tr>
+    <tr>
+      <td>Steak and Shrimp</td>
+      <td><form>
+    <input type="radio" name="quantity1" value="10" checked> 10
+          <input type="radio" name="quantity2" value="15" checked> 15
+          <input type="radio" name="quantity3" value="20" checked> 20<br>
+    <input type="radio" name="quantity4" value="25"> 25
+    <input type="radio" name="quantity5" value="other"> 30 <br>
+          <button type="button" onclick="alert('Hello World!')">Calculate</button>
+  </form> </td>
+      <td>50</td>
+    </tr>
+    <tr>
+      <td>Patridge</td>
+      <td><form>
+    <input type="radio" name="quantity1" value="10" checked> 10
+          <input type="radio" name="quantity2" value="15" checked> 15
+          <input type="radio" name="quantity3" value="20" checked> 20<br>
+    <input type="radio" name="quantity4" value="25"> 25
+    <input type="radio" name="quantity5" value="other"> 30 <br>
+          <button type="button" onclick="alert('Hello World!')">Calculate</button>
+  </form> </td>
+      <td>94</td>
+    </tr>
+    <tr>
+      <td>Pizza</td>
+      <td><form action="/action_page.php">
+    <select name="# of people">
+      <option value="10">10</option>
+      <option value="midteen">11-16</option>
+      <option value="upperteen">16-21</option>
+      <option value="20">21-30</option>
+      <option value="30">31-40</option>
+      <option value="40">41-50</option>
+      <option value="50">51-60</option>
+      <option value="60">60+</option>
+    </select>
+    <br><br>
+    <input type="submit">
+  </form></td>
+      <td>80</td>
+    </tr>
+      <tr>
+      <td>Cheeseburger</td>
+      <td><form>
+    <input type="radio" name="quantity1" value="10" checked> 10
+          <input type="radio" name="quantity2" value="15" checked> 15
+          <input type="radio" name="quantity3" value="20" checked> 20<br>
+    <input type="radio" name="quantity4" value="25"> 25
+    <input type="radio" name="quantity5" value="30"> 30 <br>
+          <button type="button" onclick="alert('Hello World!')">Calculate</button>
+  </form> 
+          </td>
+          <td>55</td>
+      </tr>
+
+  </table>
+                      <br>
+  <table border="1" style="width:100%">
+    <tr>
+      <th>Desserts</th>
+      <th>Feeds (# of people)</th> 
+      <th>Total</th>
+    </tr>
+    <tr>
+      <td>Chocolate Mousse</td>
+      <td><form>
+    <input type="radio" name="quantity1" value="10" checked> 10
+          <input type="radio" name="quantity2" value="15" checked> 15
+          <input type="radio" name="quantity3" value="20" checked> 20<br>
+    <input type="radio" name="quantity4" value="25"> 25
+    <input type="radio" name="quantity5" value="other"> 30 <br>
+          <button type="button" onclick="alert('Hello World!')">Calculate</button>
+  </form> </td>
+      <td>50</td>
+    </tr>
+    <tr>
+      <td>Molten Cake</td>
+      <td><form>
+    <input type="radio" name="quantity1" value="10" checked> 10
+          <input type="radio" name="quantity2" value="15" checked> 15
+          <input type="radio" name="quantity3" value="20" checked> 20<br>
+    <input type="radio" name="quantity4" value="25"> 25
+    <input type="radio" name="quantity5" value="other"> 30 <br>
+          <button type="button" onclick="alert('Hello World!')">Calculate</button>
+  </form> </td>
+      <td>94</td>
+    </tr>
+    <tr>
+      <td>Hot Fudge Sundae</td>
+      <td><form>
+    <input type="radio" name="quantity1" value="10" checked> 10
+          <input type="radio" name="quantity2" value="15" checked> 15
+          <input type="radio" name="quantity3" value="20" checked> 20<br>
+    <input type="radio" name="quantity4" value="25"> 25
+    <input type="radio" name="quantity5" value="other"> 30 <br>
+          <button type="button" onclick="alert('Hello World!')">Calculate</button>
+  </form> </td>
+      <td>80</td>
+    </tr>
+      <tr>
+      <td>Caramel Cake</td>
+      <td><form>
+    <input type="radio" name="quantity1" value="10" checked> 10
+          <input type="radio" name="quantity2" value="15" checked> 15
+          <input type="radio" name="quantity3" value="20" checked> 20<br>
+    <input type="radio" name="quantity4" value="25"> 25
+    <input type="radio" name="quantity5" value="other"> 30 <br>
+          <button type="button" onclick="alert('Hello World!')">Calculate</button>
+  </form> 
+          </td>
+          <td>55</td>
+      </tr>
+
+  </table>
+
+          </form>
+
+              <!--your code goes here-->
+
+
+          </main>        
+      </body>
+
+  </html>

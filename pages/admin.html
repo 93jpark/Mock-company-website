@@ -16,8 +16,7 @@
         <!--font awesome for icons-->
         <script src="https://kit.fontawesome.com/7665b13397.js"></script>
 
-        <link rel="stylesheet" href="/css/signup.css">
-        <script src="/script/signin.js"></script>
+        <link rel="stylesheet" href="/css/admin.css">
     </head>
     <body>
         <header class="header">
@@ -31,54 +30,50 @@
                         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                             <div class="navbar-nav mr-auto">
                                 <a class="nav-item nav-link active" href="index.html">Home </a>
-                                <a class="nav-item nav-link" href="about.html">About </a>
-                                <a class="nav-item nav-link" href="#">Product </a>
-                                <a class="nav-item nav-link" href="#">Reference </a>
+                                <a class="nav-item nav-link" href="./pages/about.html">About </a>
+                                <a class="nav-item nav-link" href="./pages/product.html">Product </a>
+                                <a class="nav-item nav-link" href="./pages/reference.html">Reference </a>
                                 
                                 <li class="nav-item dropdown">
                                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Member</a>
                                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                        <a class="dropdown-item" href="order.html">Order</a>
-                                        <a class="dropdown-item" href="#">Invoice</a>
-                                        <a class="dropdown-item" href="#">Utility</a>
+                                        <a class="dropdown-item" href="./pages/order.html">Order</a>
+                                        <a class="dropdown-item" href="./pages/invoice.html">Invoice</a>
+                                        <a class="dropdown-item" href="./pages/utility.html">Utility</a>
                                     </div>
                                 </li>
                             </div>
                             <div class="navbar-nav navbar-right">
-                                    <a class="nav-item nav-link active" href="signup.html"><i class="fas fa-user-plus"></i>Signup </a>
-                                    <a class="nav-item nav-link active" href="signin.html"><i class="fas fa-sign-in-alt"></i>Login </a>
+                                    <a class="nav-item nav-link active" href="./pages/signup.html"><i class="fas fa-user-plus"></i>Signup </a>
+                                    <a class="nav-item nav-link active" href="./pages/signin.html"><i class="fas fa-sign-in-alt"></i>Login </a>
                             </div>
                         </div>
                     </div>
                 </nav>
-        </header>
+            </header>
         <main>
             <!--your code goes here-->
-            <center>
-                <div class="container form-signin">
-                    <div class="row">
-                        <div class="text-center mb-4 col-md">
-                            <h1 class="h3 mb-3 font-weight-normal"><i class="fas fa-sign-in-alt"></i>Sign In</h1>
-                            <p>Welcome to THE COMPANY</p>
+                <div class="container">
+                    <div class="form-group row">
+                        <div class="col-sm-2">Type</div>
+                        <div class="col-sm-10">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="gridCheck1">
+                                    <label class="form-check-label" for="gridCheck1">American</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="gridCheck1">
+                                    <label class="form-check-label" for="gridCheck1">Asian</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="gridCheck1">
+                                    <label class="form-check-label" for="gridCheck1">Mexican</label>
+                                </div>
                         </div>
-                    </div>
-                    <div class="row">
-                        <div class="form-label-group col-lg">
-                            <label for="inputEmail">Email address</label>
-                            <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required>
                         </div>
-                        <div class="form-label-group col-lg">
-                            <label for="inputPassword">Password</label>
-                            <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md">
-                            <button class="btn btn-lg btn-primary btn-block" id="btnSignin" type="submit">Sign In</button>
-                        </div>
-                    </div>
                 </div>
-            </center>
+            
+
         </main>        
     </body>
     
