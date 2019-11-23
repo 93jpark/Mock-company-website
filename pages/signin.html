@@ -17,7 +17,6 @@
         <script src="https://kit.fontawesome.com/7665b13397.js"></script>
 
         <link rel="stylesheet" href="../css/signup.css">
-        <script src="../script/signin.js"></script>
     </head>
     <body>
             <header class="header">
@@ -61,6 +60,7 @@
                         <div class="text-center mb-4 col-md">
                             <h1 class="h3 mb-3 font-weight-normal"><i class="fas fa-sign-in-alt"></i>Sign In</h1>
                             <p>Welcome to THE COMPANY</p>
+                            <span id="error_msg" style="color: red;"></span>
                         </div>
                     </div>
                     <div class="row">
@@ -80,7 +80,14 @@
                     </div>
                 </div>
             </center>
-        </main>        
+        </main>
+        <script src="../script/signin.js"></script>
+        <script src="../script/database.js"></script>
+        
+
     </body>
+    <script>
+        checkDB();
+    </script>
     
 </html>

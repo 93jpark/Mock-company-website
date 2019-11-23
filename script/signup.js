@@ -7,25 +7,35 @@ function validation(){
     var pwsd = $("#inputPassword").val();
     var conf = $("#confirm").val();
 
-    if(isEmpty(fName) || isEmpty(lName) || isEmpty(email) || isEmpty(pwsd) || isEmpty(conf)){
-        document.querySelector("#").innerHTML = "you need to fill out";
-        console.log("hey");
+    if(isEmpty(fName) || isEmpty(lName)){
+        $("#error_msg").html("Enter The Name");
+        console.log("name");
         return false;
+    }
+
+    if(isEmpty(email)){
+        $("#error_msg").html("Enter The Email");
+        console.log("email");
+        return false;
+    }
+
+    if(isEmpty(pwsd) || isEmpty(conf)){
+        $("#error_msg").html("Enter The Password");
     }
 
     if(!(pwsd === conf)){
-        alert("invalid password");
+        $("#error_msg").html("Invalid Password");
         return false;
     }
 
-    /*
+    
     var testEmail = /^[A-Z0-9._%+-]+@([A-Z0-9-]+\.)+[A-Z]{2,4}$/i;
-    if (testEmail.test(valueToTest)){
+    if (testEmail.test(email)){
         
     }else{
-        alert("wrong email format");
+        $("#error_msg").html("Wrong Email Format");
     }
-    */
+    
 
 }
 
