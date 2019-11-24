@@ -46,8 +46,9 @@
                                         </li>
                                     </div>
                                     <div class="navbar-nav navbar-right">
-                                            <a class="nav-item nav-link active" href="./signup.html"><i class="fas fa-user-plus"></i>Signup </a>
-                                            <a class="nav-item nav-link active" href="./signin.html"><i class="fas fa-sign-in-alt"></i>Login </a>
+                                            <a class="nav-item nav-link active" id="menu_signup" href="./signup.html"><i class="fas fa-user-plus"></i>Signup </a>
+                                        <a class="nav-item nav-link active" id="menu_signin" href="./signin.html"><i class="fas fa-sign-in-alt"></i>Login </a>
+                                        <a class="nav-item nav-link active" id="menu_signout" href="./signin.html"><i class="fas fa-sign-in-alt"></i>Logout </a>
                                     </div>
                                 </div>
                             </div>
@@ -97,7 +98,32 @@
                     </div>
                 </div>
             </center>
-        </main>        
+        </main>      
+        <script src="/script/signup.js"></script>
+        <!-- The core Firebase JS SDK is always required and must be listed first -->
+        <script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-app.js"></script>
+
+        <!-- TODO: Add SDKs for Firebase products that you want to use
+            https://firebase.google.com/docs/web/setup#available-libraries -->
+        <script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-analytics.js"></script>
+
+        <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyBDLF-YLJyHNpEQ-gE-jc6I406Afwhskqw",
+            authDomain: "corporate-web-a8f49.firebaseapp.com",
+            databaseURL: "https://corporate-web-a8f49.firebaseio.com",
+            projectId: "corporate-web-a8f49",
+            storageBucket: "corporate-web-a8f49.appspot.com",
+            messagingSenderId: "353054951135",
+            appId: "1:353054951135:web:d3275c0a0a79b277108b6a",
+            measurementId: "G-TEK3E4EDE8"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        firebase.analytics();
+        </script>
+        <script src="../script/database.js"></script>  
     </body>
-    <script src="/script/signup.js"></script>
+    
 </html>

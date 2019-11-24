@@ -12,3 +12,8 @@
     text-align: left;
     margin-bottom: 3%;
 }
+
+.loggedin {
+    min-width: 50%;
+    width: 50%;
+}

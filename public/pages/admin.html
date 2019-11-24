@@ -2,15 +2,10 @@
 <html>
     <head>
         <title>THE COMPANY</title>
-        <link rel="stylesheet" href="../css/calendar.css">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <!-- Bootstrap CSS -->
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
-              integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
         <!--Google font-->
         <link href="https://fonts.googleapis.com/css?family=Inconsolata&display=swap" rel="stylesheet">
         <!--Common CSS for header-->
-        <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="./css/style.css">
         <!--jQuery-->
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <!--ajax-->
@@ -20,6 +15,8 @@
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
         <!--font awesome for icons-->
         <script src="https://kit.fontawesome.com/7665b13397.js"></script>
+
+        <link rel="stylesheet" href="/css/admin.css">
     </head>
     <body>
             <header class="header">
@@ -48,8 +45,9 @@
                                         </li>
                                     </div>
                                     <div class="navbar-nav navbar-right">
-                                            <a class="nav-item nav-link active" href="./signup.html"><i class="fas fa-user-plus"></i>Signup </a>
-                                            <a class="nav-item nav-link active" href="./signin.html"><i class="fas fa-sign-in-alt"></i>Login </a>
+                                            <a class="nav-item nav-link active" id="menu_signup" href="./signup.html"><i class="fas fa-user-plus"></i>Signup </a>
+                                            <a class="nav-item nav-link active" id="menu_signin" href="./signin.html"><i class="fas fa-sign-in-alt"></i>Login </a>
+                                            <a class="nav-item nav-link active" id="menu_signout" href="./signin.html"><i class="fas fa-sign-in-alt"></i>Logout </a>
                                     </div>
                                 </div>
                             </div>
@@ -57,70 +55,29 @@
                     </header>
         <main>
             <!--your code goes here-->
-            <div class="container col-sm-4 col-md-7 col-lg-4 mt-5">
-                <div class="card">
-                    <h3 class="card-header" id="monthAndYear"></h3>
-                    <table class="table table-bordered table-responsive-sm" id="calendar">
-                        <thead>
-                        <tr>
-                            <th>Sun</th>
-                            <th>Mon</th>
-                            <th>Tue</th>
-                            <th>Wed</th>
-                            <th>Thu</th>
-                            <th>Fri</th>
-                            <th>Sat</th>
-                        </tr>
-                        </thead>
-
-                        <tbody id="calendar-body">
-
-                        </tbody>
-                    </table>
-
-                    <div class="form-inline">
-
-                        <button class="btn btn-outline-primary col-sm-6" id="previous" onclick="previous()">Previous</button>
-
-                        <button class="btn btn-outline-primary col-sm-6" id="next" onclick="next()">Next</button>
-                    </div>
-                    <br/>
-                    <form class="form-inline">
-                        <label class="lead mr-2 ml-2" for="month">Jump To: </label>
-                        <select class="form-control col-sm-4" name="month" id="month" onchange="jump()">
-                            <option value=0>Jan</option>
-                            <option value=1>Feb</option>
-                            <option value=2>Mar</option>
-                            <option value=3>Apr</option>
-                            <option value=4>May</option>
-                            <option value=5>Jun</option>
-                            <option value=6>Jul</option>
-                            <option value=7>Aug</option>
-                            <option value=8>Sep</option>
-                            <option value=9>Oct</option>
-                            <option value=10>Nov</option>
-                            <option value=11>Dec</option>
-                        </select>
-
-                        <label for="year"></label><select class="form-control col-sm-4" name="year" id="year" onchange="jump()">
-                        <option value=2019>2019</option>
-                        <option value=2020>2020</option>
-                        <option value=2021>2021</option>
-
-                    </select></form>
+                <div class="container">
+                    <div class="form-group row">
+                        <div class="col-sm-2">Type</div>
+                        <div class="col-sm-10">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="gridCheck1">
+                                    <label class="form-check-label" for="gridCheck1">American</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="gridCheck1">
+                                    <label class="form-check-label" for="gridCheck1">Asian</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="gridCheck1">
+                                    <label class="form-check-label" for="gridCheck1">Mexican</label>
+                                </div>
+                        </div>
+                        </div>
                 </div>
-            </div>
+            
 
-            <br>
-            <p>Every Friday on second week of month</p>
-            <p> we provide all of product as 50% price</p>
-            <button type="button" name="Display a coupon">Display a coupon</button>
-            <button type="button" name="Print QR code">Print QR code</button>
-
-        </table>
-
-        <script src="../script/calendar.js"></script>
-        </main>
+        <script src="../script/database.js"></script>
+        </main>        
     </body>
-
+    
 </html>
