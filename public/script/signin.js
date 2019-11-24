@@ -7,9 +7,10 @@ firebase.auth().onAuthStateChanged(function (user){
         var user = firebase.auth().currentUser;
 
         if (user) {
-            document.querySelector("#greeting").innerHTML = "Welcome, "+user.email;
-            document.cookie="userEmail="+user.email;
-            document.cookie="userName="+user.email;
+            var userId = user.email.split("@",1)
+            document.querySelector("#greeting").innerHTML = "Welcome, "+userId;
+            document.cookie="userName="+userId;
+            
         } else {
         // No user is signed in.
         }
@@ -23,6 +24,7 @@ function login(){
     var userEmail = document.querySelector("#inputEmail").value
     var userPass = document.querySelector("#inputPassword").value
 
+
     firebase.auth().signInWithEmailAndPassword(userEmail, userPass).catch(function(error) {
         // Handle Errors here.
         alert(error.message);
@@ -33,6 +35,7 @@ function login(){
 function signout(){
     firebase.auth().signOut().then(function() {
         alert("sucessfully signed-out");
+        location.reload(true);
         document.querySelector(".form-signin").style.display = "initial";
         document.querySelector(".loggedin").style.display = "none";
         document.querySelector(".form-signin").style.width = "50%";

@@ -8,6 +8,11 @@ if(this.getCookie("userName")===""){
     console.log("user logged-in");
 }
 
+if(this.getCookie("userName")==="admin"){
+    document.querySelector("#admin_link").style.display="initial";
+
+}
+
 var member = {
     fname: "",
     lname: "",

@@ -1,50 +1,28 @@
 console.log("signup.js connected");
 
-function validation(){
-    var fName = $("#firstName").val();
-    var lName = $("#lastName").val();
-    var email = $("#inputEmail").val();
-    var pwsd = $("#inputPassword").val();
-    var conf = $("#confirm").val();
+function signup(){
 
-    if(isEmpty(fName) || isEmpty(lName)){
-        $("#error_msg").html("Enter The Name");
-        console.log("name");
-        return false;
-    }
+        var fName = $("#firstName").val();
+        var lName = $("#lastName").val();
+        var email = $("#inputEmail").val();
+        var pwsd = $("#inputPassword").val();
+        var conf = $("#confirm").val();
 
-    if(isEmpty(email)){
-        $("#error_msg").html("Enter The Email");
-        console.log("email");
-        return false;
-    }
+    firebase.auth().createUserWithEmailAndPassword(email, pwsd).catch(function(error) {
+        // Handle Errors here.
+        alert(error.message);
+        // ...
+    });
 
-    if(isEmpty(pwsd) || isEmpty(conf)){
-        $("#error_msg").html("Enter The Password");
-    }
 
-    if(!(pwsd === conf)){
-        $("#error_msg").html("Invalid Password");
-        return false;
-    }
-
-    
-    var testEmail = /^[A-Z0-9._%+-]+@([A-Z0-9-]+\.)+[A-Z]{2,4}$/i;
-    if (testEmail.test(email)){
-        
-    }else{
-        $("#error_msg").html("Wrong Email Format");
-    }
-    
-
-}
-
-function isEmpty(val){
-    return (val === undefined || val == null || val.length <= 0) ? true : false;
+    firebase.auth().signInWithEmailAndPassword(email, pwsd).catch(function(error) {
+        // Handle Errors here.
+        var errorCode = error.code;
+        var errorMessage = error.message;
+        // ...
+      });
 }
 
 window.onload = function() {
 
-    $("#btnSignup").click(this.validation);
-    
 };
