@@ -1,4 +1,5 @@
 console.log("database is connected");
+
 if(this.getCookie("userName")===""){
     console.log("no signed-in");
     document.querySelector("#menu_signout").style.display="none";
