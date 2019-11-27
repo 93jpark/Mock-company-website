@@ -2,6 +2,12 @@
     width: 75vh;
 }
 
+img {
+    width: auto;
+    height: 70vh;
+    max-height: 300px;
+}
+
 #thead {
     width: 100%;
 }

@@ -3,14 +3,10 @@ console.log("signup.js connected");
 
 function signup(email, pwsd){
 
-    firebase.auth().createUserWithEmailAndPassword(email, pwsd).catch(function(error) {
-        // Handle Errors here.
-        alert(error.message);
-        // ...
-    });
+    firebase.auth().createUserWithEmailAndPassword(email, pwsd);
 
 
-        firebase.auth().setPersistence(firebase.auth.Auth.Persistence.SESSION)
+    firebase.auth().setPersistence(firebase.auth.Auth.Persistence.SESSION)
     .then(function() {
         // Existing and future Auth states are now persisted in the current
         // session only. Closing the window would clear any existing state even
@@ -24,10 +20,13 @@ function signup(email, pwsd){
         var errorCode = error.code;
         var errorMessage = error.message;
     });
+    window.location.href = "./confirm.html";
+
 }
 
 function validation() {
-
+    document.querySelector("#error_msg").innerHTML = "";
+    var error = "";
     var flag = true;
 
     var fName = $("#firstName").val();
@@ -40,44 +39,48 @@ function validation() {
     var zip = $("#inputZip").val();
     
     if(fName === "" || lName === ""){
-        alert("Name is empty");
+        error+="Name<br>";
+        //alert("Name is empty");
         $("#firstName").focus();
         flag = false;
     }
 
     if(!(pwsd === conf)){
+        error+="Password<br>";
         $("#inputPassword").focus();
-        alert("Password is empty");
+        //alert("Password is empty");
         flag = false;
     }
 
     if(email === ""){
-        alert("Email is empty");
+        error+="Email<br>";
         $("#inputEmail").focus();
         flag = false;
     }
 
     if(phone === ""){
-        alert("Phone is empty");
+        error+="Phone<br>";
         $("#inputPhone").focus();
         flag = false;
     }
 
     if(state === ""){
-        alert("State code is empty");
+        error+="State<br>";
         $("#inputState").focus();
         flag = false;
     }
 
     if(zip === ""){
-        alert("Zip Code is empty");
+        error+="Zip<br>";
         $("#inputZip").focus();
         flag = false;
     }
 
     if(flag){
         signup(email, pwsd);
-        
+    } else {
+        document.querySelector("#error_msg").innerHTML = "Please fill out following field..<br>";
+        document.querySelector("#error_msg").innerHTML += error;
     }
     
 }

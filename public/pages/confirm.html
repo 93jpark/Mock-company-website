@@ -2,8 +2,6 @@
 <html>
     <head>
         <title>THE COMPANY</title>
-        <link rel="stylesheet" href="./css/invoice.css">
-        <script src="../script/invoice.js"> </script>
         <!--Google font-->
         <link href="https://fonts.googleapis.com/css?family=Inconsolata&display=swap" rel="stylesheet">
         <!--Common CSS for header-->
@@ -17,6 +15,9 @@
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
         <!--font awesome for icons-->
         <script src="https://kit.fontawesome.com/7665b13397.js"></script>
+
+        <link rel="stylesheet" href="../css/signup.css">
+        
     </head>
     <body>
             <header class="header">
@@ -35,7 +36,7 @@
                                         <a class="nav-item nav-link" href="./calendar.html">Calendar </a>
                                         <a class="nav-item nav-link" href="./reference.html">Reference </a>
                                         <a class="nav-item nav-link" id="admin_link" href="./admin.html" style="display: none;">Admin </a>
-
+                                        
                                         <li class="nav-item dropdown">
                                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Member</a>
                                             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
@@ -56,118 +57,67 @@
                     </header>
         <main>
             <!--your code goes here-->
-            <div class="invoice-box">
-        <table cellpadding="0" cellspacing="0">
-            <tr class="top">
-                <td colspan="2">
-                    <table>
-                        <tr>
-                            <td class="title">
-
-                            </td>
-
-                            <td>
-                                Invoice #: 123<br>
-                                Created: Nov 28, 2019<br>
-                                Due: DEC 28, 2019
-                            </td>
-                        </tr>
-                    </table>
-                </td>
-            </tr>
-
-            <tr class="information">
-                <td colspan="2">
-                    <table>
-                        <tr>
-                            <td>From <br>
-                                JMT Catering Company.<br>
-                                712 Edgewood Dr<br>
-                                MountPlasant, MI 48858
-                            </td>
-
-                            <td>For <br>
-                                Gildong Hong.<br>
-                                West BroomField St Northwest apt 1204 <br>
-                                MountPlasant, MI 48858
-                            </td>
-                        </tr>
-                    </table>
-                </td>
-            </tr>
-
-            <tr class="heading">
-                <td>
-                    Payment Method
-                </td>
-
-                <td>
-                    Check #
-                </td>
-            </tr>
-
-            <tr class="details">
-                <td>
-                    Check
-                </td>
-
-                <td>
-                    68.00
-                </td>
-            </tr>
-
-            <tr class="heading">
-                <td>
-                    Item
-                </td>
-
-                <td>
-                    Price
-                </td>
-            </tr>
-
-            <tr class="item">
-                <td>
-                    Kimchi stew
-                </td>
-
-                <td>
-                    $20.00
-                </td>
-            </tr>
-
-            <tr class="item">
-                <td>
-                    Siloin Steak
-                </td>
-
-                <td>
-                    $35.00
-                </td>
-            </tr>
-
-            <tr class="item last">
-                <td>
-                    Beer 1700cc
-                </td>
-
-                <td>
-                    $13.00
-                </td>
-            </tr>
-
-            <tr class="total">
-                <td></td>
-
-                <td>
-                   Total: $68.00
-                </td>
-            </tr>
-        </table>
-    </div>
-
-
-        </main>
+            <center>
+                <div class="container form-signup">
+                    <div class="row">
+                        <div class="text-center mb-4 col-md">
+                            <h1 class="h3 mb-3 font-weight-normal"><i class="fas fa-user-check"></i>Confirmation</h1>
+                            <p>Thank you for sign up</p>
+                            <span id="error_msg" style="color: red;">where</span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-label-group col-md">
+                            <label for="firstName">First Name</label>
+                            <label for="firstName">Joonwoo</label>
+                        </div>
+                        <div class="form-label-group col-md">
+                            <label for="lastName">Last Name</label>
+                            <label for="lastName">LastName</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-label-group col-lg">
+                            <label for="inputEmail">Email address</label>
+                            <label for="inputEmail">admin@admin.com</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-label-group col-lg">
+                            <label for="inputPhone">Phone</label>
+                            <label for="phoneNumber">9999999999</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-label-group col-lg">
+                            <label for="inputState">State Code</label>
+                            <label for="userState">MI</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-label-group col-lg">
+                            <label for="inputZip">ZIP Code</label>
+                            <input type="zipCode" id="inputZip" class="form-control" placeholder="ZIP Code" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-label-group col-md">
+                            <label for="inputPassword">Password</label>
+                            <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+                        </div>
+                        <div class="form-label-group col-md">
+                            <label for="inputPassword">Confirmation</label>
+                            <input type="password" id="confirm" class="form-control" placeholder="Password" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md">
+                            <button class="btn btn-lg btn-primary btn-block" id="btnSignup" type="submit" onclick="validation()">Sign up</button>
+                        </div>
+                    </div>
+                </div>
+            </center>
+        </main>      
         <!-- The core Firebase JS SDK is always required and must be listed first -->
         <script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-app.js"></script>
 
@@ -194,7 +144,9 @@
         firebase.initializeApp(firebaseConfig);
         firebase.analytics();
         </script>
-        <script src="../script/database.js"></script>
-    </body>
 
+        <script src="../script/database.js"></script>
+        <script src="../script/signup.js"></script>
+    </body>
+    
 </html>

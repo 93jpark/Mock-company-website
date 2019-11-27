@@ -3,9 +3,9 @@ console.log("signin.js connected");
 
 firebase.auth().onAuthStateChanged(function (user){
     if(user){
-        document.querySelector(".form-signin").style.display = "none";
-        document.querySelector(".loggedin").style.display = "inline";
-        document.querySelector(".loggedin").style.width = "75vh";
+        document.querySelector(".form-signin").style.visibility = "hidden";
+        document.querySelector(".loggedin").style.visibility = "visible";
+        // document.querySelector(".loggedin").style.width = "75vh";
         var user = firebase.auth().currentUser;
 
         if (user) {
@@ -33,19 +33,20 @@ function login(){
     // if a user forgets to sign out.
     // ...
     // New sign-in will be persisted with session persistence.
-        return firebase.auth().signInWithEmailAndPassword(email, password);
+        return firebase.auth().signInWithEmailAndPassword(userEmail, userPass);
     })
         .catch(function(error) {
             // Handle Errors here.
             var errorCode = error.code;
             var errorMessage = error.message;
+            console.log(errorMessage);
         });
 
     // firebase.auth().signInWithEmailAndPassword(userEmail, userPass).catch(function(error) {
-    //     // Handle Errors here.
-    //     alert(error.message);
-    //     // ...
-    //   });    
+    //      // Handle Errors here.
+    //      alert(error.message);
+    //      // ...
+    //    });    
 }
 
 function signout(){

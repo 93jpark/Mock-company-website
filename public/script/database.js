@@ -2,15 +2,15 @@ console.log("database is connected");
 
 if(this.getCookie("userName")===""){
     console.log("no signed-in");
-    document.querySelector("#menu_signout").style.display="none";
+    document.querySelector("#menu_signout").style.visibility="hidden";
 } else {
-    document.querySelector("#menu_signin").style.display="none";
-    document.querySelector("#menu_signup").style.display="none";
+    document.querySelector("#menu_signin").style.visibility="hidden";
+    document.querySelector("#menu_signup").style.visibility="hidden";
     console.log("user logged-in");
 }
 
 if(this.getCookie("userName")==="admin"){
-    document.querySelector("#admin_link").style.display="initial";
+    document.querySelector("#admin_link").style.visibility="visible";
 
 }
 
