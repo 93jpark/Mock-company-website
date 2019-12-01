@@ -2,7 +2,7 @@ var s  = getCookie("arr");
 var sArr = s.split(",");
 var total = getCookie("total");
 if(getCookie("code")==="t"){
-    total = Math.round(total/2);
+    total = Math.round(total*9/10);
 }
 console.log(sArr);
  var name = getCookie("userName");
