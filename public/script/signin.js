@@ -1,8 +1,16 @@
 console.log("signin.js connected");
 
+if(this.getCookie("userName")===""){
+    document.querySelector(".form-signin").style.visibility = "visible";
+    document.querySelector(".loggedin").style.visibility = "hidden";
+} else {
+    document.querySelector(".form-signin").style.visibility = "hidden";
+    document.querySelector(".loggedin").style.visibility = "visible";
+}
 
 firebase.auth().onAuthStateChanged(function (user){
     if(user){
+        console.log("hit");
         document.querySelector(".form-signin").style.visibility = "hidden";
         document.querySelector(".loggedin").style.visibility = "visible";
         // document.querySelector(".loggedin").style.width = "75vh";
@@ -17,12 +25,11 @@ firebase.auth().onAuthStateChanged(function (user){
         // No user is signed in.
         }
 
-    } else {
-        
     }
 });
 
 function login(){
+    validate();
     var userEmail = document.querySelector("#inputEmail").value
     var userPass = document.querySelector("#inputPassword").value
 
@@ -61,6 +68,15 @@ function signout(){
       }).catch(function(error) {
         alert("you didn't sign-in");
       });
+}
+
+function validate(){
+    if(document.querySelector("#inputEmail").value===""){
+        document.querySelector("#emailError").innerHTML=" *";
+    }
+    if(document.querySelector("#inputPassword").value===""){
+        document.querySelector("#passwordError").innerHTML=" *";
+    }
 }
 
 function isEmpty(val){

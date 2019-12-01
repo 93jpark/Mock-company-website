@@ -56,117 +56,194 @@
                     </header>
         <main>
             <!--your code goes here-->
-            <div class="invoice-box">
+                
+        <input type="button" id = "invoice" value="Look invoice" onclick="putInfo()">
+        <div class="invoice-box">
         <table cellpadding="0" cellspacing="0">
-            <tr class="top">
-                <td colspan="2">
-                    <table>
-                        <tr>
-                            <td class="title">
+        <tr class="top">
+            <td colspan="2">
+                <table>
+                    <tr>
+                        <td class="title">
 
-                            </td>
+                        </td>
 
-                            <td>
-                                Invoice #: 123<br>
-                                Created: Nov 28, 2019<br>
-                                Due: DEC 28, 2019
-                            </td>
-                        </tr>
-                    </table>
-                </td>
-            </tr>
+                        <td>
+                            <!-- Invoice #:123<br>
+                            Created: Nov 28, 2019<br>
+                            Due: DEC 28, 2019 -->
 
-            <tr class="information">
-                <td colspan="2">
-                    <table>
-                        <tr>
-                            <td>From <br>
-                                JMT Catering Company.<br>
-                                712 Edgewood Dr<br>
-                                MountPlasant, MI 48858
-                            </td>
+                            Invoice: #<p id = "number"></p>
+                            Created: <p id = "createDate"></p>
+                            DUE: <p id = "due"></p>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
 
-                            <td>For <br>
-                                Gildong Hong.<br>
-                                West BroomField St Northwest apt 1204 <br>
-                                MountPlasant, MI 48858
-                            </td>
-                        </tr>
-                    </table>
-                </td>
-            </tr>
+        <tr class="information">
+            <td colspan="2">
+                <table>
+                    <tr>
+                        <td>From<br>
+                            <p>JMT Catering Company.</p>
+                            <p>712 Edgewood Dr</p>
+                            <p>MountPlasant, MI 48858 </p>
+                        </td>
 
-            <tr class="heading">
-                <td>
-                    Payment Method
-                </td>
+                        <td>For <br>
+                            <p id = "name">Gildong Hong</p>
+                            <p id = "address">West BroomField St Northwest apt 1204</p>
+                            <p id = "city">MountPlasant, MI 48858</p>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
 
-                <td>
-                    Check #
-                </td>
-            </tr>
 
-            <tr class="details">
-                <td>
-                    Check
-                </td>
+        <tr class="heading">
+            <td>
+                Item
+            </td>
 
-                <td>
-                    68.00
-                </td>
-            </tr>
+            <td>
+                Price
+            </td>
+        </tr>
 
-            <tr class="heading">
-                <td>
-                    Item
-                </td>
+        <tr class="item">
+            <td>
+            Potato Skins
+            </td>
 
-                <td>
-                    Price
-                </td>
-            </tr>
+            <td>
+            <p id = "p1"></p>
+            </td>
+        </tr>
 
-            <tr class="item">
-                <td>
-                    Kimchi stew
-                </td>
+        <tr class="item">
+            <td>
+                Pigs in a blanket
+            </td>
 
-                <td>
-                    $20.00
-                </td>
-            </tr>
+            <td>
+                <p id = "p2"></p>
+            </td>
+        </tr>
 
-            <tr class="item">
-                <td>
-                    Siloin Steak
-                </td>
+        <tr class="item">
+            <td>
+                Spinach and Artichoke dip
+            </td>
 
-                <td>
-                    $35.00
-                </td>
-            </tr>
+            <td>
+                <p id = "p3"></p>
+            </td>
+        </tr>
 
-            <tr class="item last">
-                <td>
-                    Beer 1700cc
-                </td>
+        <tr class="item">
+            <td>
+            Steak and Shrimp
+            </td>
 
-                <td>
-                    $13.00
-                </td>
-            </tr>
+            <td>
+                <p id = "p4"></p>
+            </td>
+        </tr>
 
-            <tr class="total">
-                <td></td>
+        <tr class="item">
+            <td>
+            Partridge
+            </td>
 
-                <td>
-                   Total: $68.00
-                </td>
-            </tr>
+            <td>
+                <p id = "p5"></p>
+            </td>
+        </tr>
+
+        <tr class="item">
+            <td>
+                Spinach and Artichoke dip
+            </td>
+
+            <td>
+                <p id = "p6"></p>
+            </td>
+        </tr>
+
+        <tr class="item">
+            <td>
+                Pizza
+            </td>
+
+            <td>
+                <p id = "p7"></p>
+            </td>
+        </tr>
+
+        <tr class="item">
+            <td>
+                Cheeseburger
+            </td>
+
+            <td>
+            <p id = "p8"></p>
+            </td>
+        </tr>
+
+        <tr class="item">
+            <td>
+            Chocolate Mousse
+            </td>
+
+            <td>
+                <p id = "p9"></p>
+            </td>
+        </tr>
+
+        <tr class="item">
+            <td>
+                Molten Cake
+            </td>
+
+            <td>
+                <p id = "p10"></p>
+            </td>
+        </tr>
+        <tr class="item">
+            <td>
+                Hot Fudge Sundae
+            </td>
+
+            <td>
+                <p id = "p11"></p>
+            </td>
+        </tr>
+        <tr class="item">
+            <td>
+                Carmel Cake
+            </td>
+
+            <td>
+                <p id = "p12"></p>
+            </td>
+        </tr>
+        <tr class="total">
+            <td></td>
+
+            <td>
+            <p id = "totalPrice">68.00</p>
+            </td>
+        </tr>
         </table>
-    </div>
+        </div>
 
 
+        </main>
+        <script src="../script/database.js"></script>
+        <script src="../script/invoice.js"> </script>
         </main>
         <!-- The core Firebase JS SDK is always required and must be listed first -->
         <script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-app.js"></script>

@@ -2,10 +2,11 @@
   <html>
       <head>
           <title>THE COMPANY</title>
+          <link rel="stylesheet" href="../css/utility.css">
           <!--Google font-->
           <link href="https://fonts.googleapis.com/css?family=Inconsolata&display=swap" rel="stylesheet">
           <!--Common CSS for header-->
-          <link rel="stylesheet" href="./css/style.css">
+          <link rel="stylesheet" href="../css/style.css">
           <!--jQuery-->
           <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
           <!--ajax-->
@@ -56,104 +57,110 @@
           <main>
             <form method="post" action = "order.html">
             <p><h1><center>The Order Calculator</center></h1></p>
-            <center><table>
-                <tr>
-                <th>Food</th>
-                <th> Price</th>
-                <th> Quantity</th>
-            </tr>
-            
-            <tr><h2>Appetizers</h2></tr>
-            <tr>
-            <td>Potato skin</td>
-            <td> $5 </td>
-                <td>  <input type ="number" value="0" min="0" max="100" id="quantity1">  </td>
-            
-              </tr>
+            <hr>
+            <br>
+            <center>
+              <div class="container" style="width: 80vh;">
+                <div class="row d-flex justify-content-center">
+                  <div><h2>Appetizer</h2></div>
+                </div>
+                <div class="row">
+                  <div class="col">Food</div>
+                  <div class="col">Price</div>
+                  <div class="col d-flex justify-content-start">Quantity</div>
+                  <div class="w-100"></div>
+
+                  <div class="col">Potato skin</div>
+                  <div class="col">$5</div>
+                  <div class="col d-flex justify-content-start"><input class="menu-item appetizer-menu" type="number" id="qty-potato-skin" value="0" min="0"></div>
+                  <div class="w-100"></div>
+
+                  <div class="col">Pigs in blanket</div>
+                  <div class="col">$7</div>
+                  <div class="col d-flex justify-content-start"><input class="menu-item appetizer-menu" type="number" id="qty-pigs-in-blanket" value="0" min="0"></div>
+                  <div class="w-100"></div>
+
+                  <div class="col">Spinach N' Artichoke dip</div>
+                  <div class="col">$9</div>
+                  <div class="col d-flex justify-content-start"><input class="menu-item appetizer-menu" type="number" id="qty-spinach" value="0" min="0"></div>
+                  <div class="w-100"></div>
+
+                  <div class="col">Eggs in soy broth</div>
+                  <div class="col">$10</div>
+                  <div class="col d-flex justify-content-start"><input class="menu-item appetizer-menu" type="number" id="qty-eggs" value="0" min="0"></div>
+                  <div class="w-100"></div>
+                </div>
+                <hr>
+                <div class="row d-flex justify-content-center">
+                  <div><h2>Main</h2></div>
+                </div>                
+                <div class="row">
+                  <div class="col">Food</div>
+                  <div class="col">Price</div>
+                  <div class="col d-flex justify-content-start">Quantity</div>
+                  <div class="w-100"></div>
+
+                  <div class="col">Steak and Shrimp</div>
+                  <div class="col">$17</div>
+                  <div class="col d-flex justify-content-start"><input class="menu-item main-menu" type="number" id="qty-steak" value="0" min="0"></div>
+                  <div class="w-100"></div>
+
+                  <div class="col">Patridge</div>
+                  <div class="col">$15</div>
+                  <div class="col d-flex justify-content-start"><input class="menu-item main-menu" type="number" id="qty-steak" value="0" min="0"></div>
+                  <div class="w-100"></div>
+
+                  <div class="col">Pizza</div>
+                  <div class="col">$17</div>
+                  <div class="col d-flex justify-content-start"><input class="menu-item main-menu" type="number" id="qty-pizza" value="0" min="0"></div>
+                  <div class="w-100"></div>
+
+                  <div class="col">Cheeseburger</div>
+                  <div class="col">$13</div>
+                  <div class="col d-flex justify-content-start"><input class="menu-item main-menu" type="number" id="qty-burger" value="0" min="0"></div>
+                  <div class="w-100"></div>
+                </div>
                 
-              <tr>
-            <td>Pigs in a blanket</td>
-            <td> $7 </td>
-                <td>  <input type ="number" value="0" min="0" max="100" id="quantity2">  </td>
-            
-              </tr>
-              
-              <tr>
-            <td>Spinach N' Artichoke dip</td>
-            <td> $9 </td>
-                <td>  <input type ="number" value="0" min="0" max="100" id="quantity3">  </td>
-            
-              </tr>
-                
-              <tr>
-            <td>Another App</td>
-            <td> $10 </td>
-                <td>  <input type ="number" value="0" min="0" max="100" id="quantity4">  </td>
-              </tr>
-              
-              <tr>
-                <td><h2>Main Course</h2></td>
-              </tr>
-              
-              <tr>
-            <td>Steak and Shrimp</td>
-            <td> $17 </td>
-                <td>  <input type ="number" value="0" min="0" max="100" id="quantity5">  </td>
-              </tr>
-              
-              
-              
-                <tr>
-            <td>Partridge</td>
-            <td> $15 </td>
-                <td>  <input type ="number" value="0" min="0" max="100" id="quantity6">  </td>
-              </tr>
-              
-              <tr>
-            <td>Pizza</td>
-            <td> $17 </td>
-                <td>  <input type ="number" value="0" min="0" max="100" id="quantity7">  </td>
-              </tr>
-              
-                <tr>
-            <td>Cheeseburger</td>
-            <td> $13 </td>
-                <td>  <input type ="number" value="0" min="0" max="100" id="quantity8">  </td>
-              </tr>
-              <tr><td><h2>Desserts</h2></td></tr>
-                <tr>
-            <td>Chocolate Mousse</td>
-            <td> $12 </td>
-                <td>  <input type ="number" value="0" min="0" max="100" id="quantity9">  </td>
-              </tr>
-              
-                <tr>
-            <td>Molten Cake</td>
-            <td> $8 </td>
-                <td>  <input type ="number" value="0" min="0" max="100" id="quantity10">  </td>
-              </tr>
-            
-                  <tr>
-            <td>Hot Fudge Sundae</td>
-            <td> $11 </td>
-                <td>  <input type ="number" value="0" min="0" max="100" id="quantity11">  </td>
-              </tr>
-                  <tr>
-            <td>Carmel Cake</td>
-            <td> $13 </td>
-                <td>  <input type ="number" value="0" min="0" max="100" id="quantity12">  </td>
-              </tr>
-            
-            
-            <tr>
-            <td colspan="2">
-            <input type= "submit" value="submit" onclick="calculateArray()">
-            </td>
-            </tr> 
-            
-            </form>
-            
-            </table>
+                <hr>
+
+                <div class="row  d-flex justify-content-center">
+                  <div><h2>Desserts</h2></div>
+                </div>                
+                <div class="row">
+                  <div class="col">Food</div>
+                  <div class="col">Price</div>
+                  <div class="col d-flex justify-content-start">Quantity</div>
+                  <div class="w-100"></div>
+
+                  <div class="col">Chocolate Mousse Cake</div>
+                  <div class="col">$12</div>
+                  <div class="col d-flex justify-content-start"><input class="menu-item appetizer-menu" type="number" id="qty-mousse-cake" value="0" min="0"></div>
+                  <div class="w-100"></div>
+
+                  <div class="col">Molten Cake</div>
+                  <div class="col">$8</div>
+                  <div class="col d-flex justify-content-start"><input class="menu-item desserts-menu" type="number" id="qty-molten-cake" value="0" min="0"></div>
+                  <div class="w-100"></div>
+
+                  <div class="col">Hot Fudge Sundae</div>
+                  <div class="col">$11</div>
+                  <div class="col d-flex justify-content-start"><input class="menu-item desserts-menu" type="number" id="qty-fudge" value="0" min="0"></div>
+                  <div class="w-100"></div>
+
+                  <div class="col">Carmel Cake</div>
+                  <div class="col">$13</div>
+                  <div class="col d-flex justify-content-start"><input class="menu-item desserts-menu" type="number" id="qty-carmel-cake" value="0" min="0"></div>
+                  <div class="w-100"></div>
+                </div>
+                <hr>
+                <div class="row d-flex justify-content-center">
+                  <div class="col">Total amount</div>
+                  <div class="col">$ <span id="result">0</span></div>
+                  <div class="col d-flex justify-content-start"><button type="button" class="btn btn-sm btn-dark" onclick="calculate()">sum</button></div>
+                </div>
+
+              </div>
+            </div>
             </center>
         </main>
         <!-- The core Firebase JS SDK is always required and must be listed first -->
@@ -183,7 +190,7 @@
         firebase.analytics();
         </script>    
       <script src="../script/database.js"></script>
-      <script src="../js/utility.js"></script>
+      <script src="../script/utility.js"></script>
       </body>
       
 

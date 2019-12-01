@@ -38,15 +38,35 @@ function validation() {
     var state = $("#inputState").val();
     var zip = $("#inputZip").val();
     
-    if(fName === "" || lName === ""){
-        error+="Name<br>";
+        if(document.querySelector("#inputEmail").value===""){
+            document.querySelector("#emailError").innerHTML=" *";
+        }
+        if(document.querySelector("#inputPassword").value===""){
+            document.querySelector("#passwordError").innerHTML=" *";
+        }
+    }
+
+    
+    if(fName === ""){
+        error+="First Name<br>";
         //alert("Name is empty");
+        document.querySelector("#fnameError").innerHTML=" *";
         $("#firstName").focus();
+        flag = false;
+    }
+    
+    if(lName === ""){
+        error+="Last Name<br>";
+        //alert("Name is empty");
+        document.querySelector("#lnameError").innerHTML=" *";
+        $("#lastName").focus();
         flag = false;
     }
 
     if(!(pwsd === conf)){
         error+="Password<br>";
+        document.querySelector("#pwsdError").innerHTML=" *";
+        document.querySelector("#confError").innerHTML=" *";
         $("#inputPassword").focus();
         //alert("Password is empty");
         flag = false;
@@ -54,12 +74,15 @@ function validation() {
 
     if(email === ""){
         error+="Email<br>";
+        document.querySelector("#emailError").innerHTML=" *";
+        
         $("#inputEmail").focus();
         flag = false;
     }
 
     if(phone === ""){
         error+="Phone<br>";
+        document.querySelector("#phoneError").innerHTML=" *";
         $("#inputPhone").focus();
         flag = false;
     }
@@ -67,11 +90,13 @@ function validation() {
     if(state === ""){
         error+="State<br>";
         $("#inputState").focus();
+        document.querySelector("#stateError").innerHTML=" *";
         flag = false;
     }
 
     if(zip === ""){
         error+="Zip<br>";
+        document.querySelector("#zipError").innerHTML=" *";
         $("#inputZip").focus();
         flag = false;
     }
