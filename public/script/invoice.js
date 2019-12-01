@@ -1,6 +1,9 @@
 var s  = getCookie("arr");
 var sArr = s.split(",");
 var total = getCookie("total");
+if(getCookie("code")==="t"){
+    total = Math.round(total/2);
+}
 console.log(sArr);
  var name = getCookie("userName");
 var l = getCookie("location");
@@ -19,9 +22,11 @@ var q9 = sArr[8];
 var q10 = sArr[9];
 var q11 = sArr[10];
 var q12 = sArr[11];
-showInvoice();
+
 setDate();
 setInvoiceNumber();
+checkCoupon();
+showInvoice();
 
 function showInvoice(){
     document.getElementById("p1").innerHTML = q1;
@@ -51,10 +56,19 @@ var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
 var yyyy = today.getFullYear();
 today = mm + '/' + dd + '/' + yyyy;
 document.getElementById("createDate").innerHTML = today;
+if(mm=="13" && getCookie("code")==="f"){
+    total = Math.round(total/2);
+}
 }
 
 function setInvoiceNumber(){
     var num = Math.floor(Math.random() * 10000000000000);
     document.getElementById("number").innerHTML = num;
+}
+
+function checkCoupon(){
+if(getCookie("code")==='t'){
+    document.getElementById("coupon").innerHTML = "YES";
+}
 }
 

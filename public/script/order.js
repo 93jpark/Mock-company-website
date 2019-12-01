@@ -8,6 +8,7 @@ function calculate() {
         total += inputs[index].value * prices[index];
         arr += inputs[index].value+',';
     }
+    
 
     document.querySelector("#result").innerHTML = total;
     console.log(arr);

@@ -80,3 +80,10 @@ function showCalendar(month, year) {
     }
 
 }
+document.cookie = "code = f";
+function qrCode(){
+    document.cookie = "code = t";
+    document.getElementById("code").style.display = 'block';
+    
+    
+}
