@@ -16,7 +16,7 @@
         <!--font awesome for icons-->
         <script src="https://kit.fontawesome.com/7665b13397.js"></script>
 
-        <link rel="stylesheet" href="../css/signup.css">
+        <link rel="stylesheet" href="../css/confirmation.css">
         
     </head>
     <body>
@@ -58,85 +58,56 @@
         <main>
             <!--your code goes here-->
             <center>
-                <div class="container form-signup">
+                <div class="container confirmation">
                     <div class="row">
                         <div class="text-center mb-4 col-md">
-                            <h1 class="h3 mb-3 font-weight-normal"><i class="fas fa-user-plus"></i>Sign Up</h1>
-                            <p>Welcome to THE COMPANY</p>
-                            <span id="error_msg" style="color: red;"></span>
+                            <h1 class="h3 mb-3 font-weight-normal"><i class="fas fa-user-plus"></i>Confirmation</h1>
                         </div>
                     </div>
                     <div class="row">
                         <div class="form-label-group col-md">
-                            <label for="firstName">First Name</label><span class="error" style="color: red;" id="fnameError"></span>
-                            <input type="firstName" id="firstName" class="form-control" placeholder="first name" required autofocus>
+                            <div class="col">Name</div>
+                            <div class="col"><span id="name"></span></div>
                         </div>
-                        <div class="form-label-group col-md">
-                            <label for="inputEmail">Last Name</label><span class="error" style="color: red;" id="lnameError"></span>
-                            <input type="lastName" id="lastName" class="form-control" placeholder="last name" required>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="form-label-group col-lg">
-                            <label for="inputEmail">Email address</label><span class="error" style="color: red;" id="emailError"></span>
-                            <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="form-label-group col-md">
-                            <label for="inputPassword">Password</label><span class="error" style="color: red;" id="pwsdError"></span>
-                            <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
-                        </div>
-                        <div class="form-label-group col-md">
-                            <label for="inputPassword">Confirmation</label><span class="error" style="color: red;" id="confError"></span>
-                            <input type="password" id="confirm" class="form-control" placeholder="Password" required>
-                        </div>
-                    </div>
-                    
-                    <div class="row">
-                        <div class="form-label-group col-lg">
-                            <label for="inputEmail">Phone</label><span class="error" style="color: red;" id="phoneError"></span>
-                            <input type="phone" id="inputPhone" class="form-control" placeholder="phone number" required>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="form-label-group col-lg">
-                            <label for="inputState">State Code</label><span class="error" style="color: red;" id="stateError"></span>
-                            <input type="stateCode" id="inputState" class="form-control" placeholder="state code ex) MI" required>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="form-label-group col-lg">
-                            <label for="inputZip">ZIP Code</label><span class="error" style="color: red;" id="zipError"></span>
-                            <input type="zipCode" id="inputZip" class="form-control" placeholder="ZIP Code" required>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <label for="inputCtype">Customer Type</label>
-                        <select class="form-control" id="customerType">
-                            <option value="personal">Personal</option>
-                            <option value="business">Business</option>
-                            <option value="Government">Government</option>
-                        </select>
                     </div>
                     <br>
                     <div class="row">
-                        <label for="inputPtype">Payment Type</label>
-                        <select class="form-control" id="paymentType">
-                            <option value="credit">Credit</option>
-                            <option value="cash">Cash</option>
-                            <option value="po">PO.</option>
-                        </select>
+                        <div class="form-label-group col-md">
+                                <div class="col">Email address</div>
+                                <div class="col"><span id="email"></span></div>
+                        </div>
+                        <div class="form-label-group col-md">
+                            <div class="col">Phone number</div>
+                            <div class="col"><span id="phone"></span></div>
+                        </div>
                     </div>
                     <br>
                     <div class="row">
-                        <div class="col-md">
-                            <button class="btn btn-lg btn-primary btn-block" id="btnSignup" type="submit" onclick="validation()">Sign up</button>
+                        <div class="form-label-group col-md">
+                            <div class="col">Zip</div>
+                            <div class="col"><span id="zip"></span></div>
+                        </div>
+
+                        <div class="form-label-group col-md">
+                            <div class="col">State</div>
+                            <div class="col"><span id="state"></span></div>
                         </div>
                     </div>
+                    <br>
+                    <div class="row">
+                        <div class="form-label-group col-md">
+                            <div class="col">Customer Type</div>
+                            <div class="col"><span id="cType"></span></div>
+                        </div>
+                        <div class="form-label-group col-md">
+                            <div class="col">Payment Type</div>
+                            <div class="col"><span id="pType"></span></div>
+                        </div>
+                    </div>
+                <br>
+                <button class="btn btn-lg btn-primary btn-block" id="btnProceed" onclick="proceed()">Proceed</button>
                 </div>
             </center>
-            <button onclick="move()">click</button>
         </main>      
         <!-- The core Firebase JS SDK is always required and must be listed first -->
         <script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-app.js"></script>
@@ -166,7 +137,7 @@
         </script>
 
         <script src="../script/database.js"></script>
-        <script src="../script/signup.js"></script>
+        <script src="../script/confirmation.js"></script>
     </body>
     
 </html>

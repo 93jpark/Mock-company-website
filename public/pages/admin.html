@@ -5,7 +5,7 @@
         <!--Google font-->
         <link href="https://fonts.googleapis.com/css?family=Inconsolata&display=swap" rel="stylesheet">
         <!--Common CSS for header-->
-        <link rel="stylesheet" href="./css/style.css">
+        <link rel="stylesheet" href="../css/style.css">
         <!--jQuery-->
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <!--ajax-->
@@ -16,67 +16,85 @@
         <!--font awesome for icons-->
         <script src="https://kit.fontawesome.com/7665b13397.js"></script>
 
-        <link rel="stylesheet" href="/css/admin.css">
+        <link rel="stylesheet" href="../css/admin.css">
     </head>
     <body>
-            <header class="header">
-                    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-                            <div class="container">
-                                <a class="navbar-brand" href="../index.html"><i class="fas fa-utensils"></i> COMPANY</a>
-                                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                                    <span class="navbar-toggler-icon"></span>
-                                </button>
-                
-                                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                                    <div class="navbar-nav mr-auto">
-                                        <a class="nav-item nav-link active" href="../index.html">Home </a>
-                                        <a class="nav-item nav-link" href="./about.html">About </a>
-                                        <a class="nav-item nav-link" href="./product.html">Product </a>
-                                        <a class="nav-item nav-link" href="./calendar.html">Calendar </a>
-                                        <a class="nav-item nav-link" href="./reference.html">Reference </a>
-                                        <a class="nav-item nav-link" id="admin_link" href="./admin.html" style="display: none;">Admin </a>
-
-                                        <li class="nav-item dropdown">
-                                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Member</a>
-                                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                                <a class="dropdown-item" href="./order.html">Order</a>
-                                                <a class="dropdown-item" href="./invoice.html">Invoice</a>
-                                                <a class="dropdown-item" href="./utility.html">Utility</a>
-                                            </div>
-                                        </li>
-                                    </div>
-                                    <div class="navbar-nav navbar-right">
-                                            <a class="nav-item nav-link active" id="menu_signup" href="./signup.html"><i class="fas fa-user-plus"></i>Signup </a>
-                                            <a class="nav-item nav-link active" id="menu_signin" href="./signin.html"><i class="fas fa-sign-in-alt"></i>Login </a>
-                                            <a class="nav-item nav-link active" id="menu_signout" href="./signin.html"><i class="fas fa-sign-in-alt"></i>Logout </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </nav>
-                    </header>
-        <main>
-            <!--your code goes here-->
-                <div class="container">
-                    <div class="form-group row">
-                        <div class="col-sm-2">Type</div>
-                        <div class="col-sm-10">
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" id="gridCheck1">
-                                    <label class="form-check-label" for="gridCheck1">American</label>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" id="gridCheck1">
-                                    <label class="form-check-label" for="gridCheck1">Asian</label>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" id="gridCheck1">
-                                    <label class="form-check-label" for="gridCheck1">Mexican</label>
-                                </div>
-                        </div>
-                        </div>
-                </div>
-            
+        <header class="header">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                    <div class="container">
+                        <a class="navbar-brand" href="../index.html"><i class="fas fa-utensils"></i> COMPANY</a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
         
+                        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                            <div class="navbar-nav mr-auto">
+                                <a class="nav-item nav-link active" href="../index.html">Home </a>
+                                <a class="nav-item nav-link" href="./about.html">About </a>
+                                <a class="nav-item nav-link" href="./product.html">Product </a>
+                                <a class="nav-item nav-link" href="./calendar.html">Calendar </a>
+                                <a class="nav-item nav-link" href="./reference.html">Reference </a>
+                                <a class="nav-item nav-link" id="admin_link" href="./admin.html" style="display: none;">Admin </a>
+
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Member</a>
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                        <a class="dropdown-item" href="./order.html">Order</a>
+                                        <a class="dropdown-item" href="./invoice.html">Invoice</a>
+                                        <a class="dropdown-item" href="./utility.html">Utility</a>
+                                    </div>
+                                </li>
+                            </div>
+                            <div class="navbar-nav navbar-right">
+                                <a class="nav-item nav-link active" id="menu_signup" href="./signup.html"><i class="fas fa-user-plus"></i>Signup </a>
+                                <a class="nav-item nav-link active" id="menu_signin" href="./signin.html"><i class="fas fa-sign-in-alt"></i>Login </a>
+                                <a class="nav-item nav-link active" id="menu_signout" href="./signin.html"><i class="fas fa-sign-in-alt"></i>Logout </a>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </header>
+        <main>
+            <center>
+                <div class="container admin">
+                    <div class="row">
+                        <div class="text-center mb-4 col-md">
+                            <h1 class="h3 mb-3 font-weight-normal"><i class="fas fa-sign-in-alt"></i>Admin</h1>
+                            <span id="error_msg" style="color: red;"></span>
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col">Food name</div>
+                        <div class="col">Price($)</div>
+                        <div class="col">Qty</div>
+                        <div class="col"> </div>
+                        <div class="w-100"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col"><input type="text" id="foodName" placeholder="Enter food name" required></div>
+                        <div class="col"><input type="number" id="price" value="1" min="1"></div>
+                        <div class="col"><input type="number" id="qty" value="0" min="0"></div>
+                        <div class="col"><button type="button" class="btn btn-sm btn-primary" onclick="add()">add</button></div>
+                        <div class="w-100"></div>
+                    </div>
+                    <hr>
+                    <div class="row table">
+
+                    </div>
+                </div>
+
+                <div class="container loggedin" style="visibility: hidden; max-width: 50%; width: 50%;">
+                    <div class="jumbotron">
+                        <div id="content">
+                            <h1 class="display-4" id="greeting"></h1>
+                            <div>
+                                <button class="btn btn-lg btn-primary btn-block" id="btnSignout" onclick="signout()">Sign Out</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </center>
         </main>
         <!-- The core Firebase JS SDK is always required and must be listed first -->
         <script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-app.js"></script>
@@ -105,7 +123,7 @@
         firebase.analytics();
         </script>
         <script src="../script/database.js"></script>
-        <script src="../script/calendar.js"></script>
+        <script src="../script/admin.js"></script>
     </body>
     
 </html>

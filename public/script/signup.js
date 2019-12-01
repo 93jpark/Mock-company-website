@@ -26,6 +26,10 @@ function signup(email, pwsd){
 
 function validation() {
     document.querySelector("#error_msg").innerHTML = "";
+    var errors = document.querySelectorAll(".error");
+    errors.forEach(function(e){
+        e.innerHTML = "";
+    });
     var error = "";
     var flag = true;
 
@@ -37,14 +41,8 @@ function validation() {
     var phone = $("#inputPhone").val();
     var state = $("#inputState").val();
     var zip = $("#inputZip").val();
-    
-        if(document.querySelector("#inputEmail").value===""){
-            document.querySelector("#emailError").innerHTML=" *";
-        }
-        if(document.querySelector("#inputPassword").value===""){
-            document.querySelector("#passwordError").innerHTML=" *";
-        }
-    }
+    var cType = $("#customerType").val();
+    var pType = $("#paymentType").val();
 
     
     if(fName === ""){
@@ -63,9 +61,18 @@ function validation() {
         flag = false;
     }
 
-    if(!(pwsd === conf)){
+
+    if(pwsd === ""){
         error+="Password<br>";
         document.querySelector("#pwsdError").innerHTML=" *";
+        $("#inputPassword").focus();
+        //alert("Password is empty");
+        flag = false;
+    }
+
+    if(conf === ""){
+        error+="Password<br>";
+        
         document.querySelector("#confError").innerHTML=" *";
         $("#inputPassword").focus();
         //alert("Password is empty");
@@ -102,13 +109,29 @@ function validation() {
     }
 
     if(flag){
+        setCookie("c_fName",fName);
+        setCookie("c_lName",lName);
+        setCookie("c_email",email);
+        setCookie("c_phone",phone);
+        setCookie("c_state",state);
+        setCookie("c_zip",zip);
+        setCookie("c_cType",cType);
+        setCookie("c_pType",pType);
+
         signup(email, pwsd);
+        window.location.pathname = "../pages/confirmation.html";
     } else {
-        document.querySelector("#error_msg").innerHTML = "Please fill out following field..<br>";
-        document.querySelector("#error_msg").innerHTML += error;
+        document.querySelector("#error_msg").innerHTML = "Please fill out empty field<br>";
+        //document.querySelector("#error_msg").innerHTML += error;
     }
-    
 }
+
+function move(){
+    window.location.pathname = "../pages/confirmation.html";
+
+}
+    
+
 
 window.onload = function() {
 
