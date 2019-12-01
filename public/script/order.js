@@ -15,3 +15,10 @@ function calculate() {
     document.cookie = "total = "+total;
     
 }
+
+function info(){
+    window.location.href = 'invoice.html';
+    document.cookie = "location = "+document.getElementById("location").value;
+    document.cookie = "city = "+document.getElementById("city").value;
+    document.cookie = "cardNumber = "+document.getElementById("cardNumber").value;
+}

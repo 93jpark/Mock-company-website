@@ -56,6 +56,125 @@
                     </header>
         <main>
             <!--your code goes here-->
+            <form method="post" action = "order.html">
+                <p><h1><center>    Order    </center></h1></p>
+                <hr>
+                <br>
+                <center>
+                  <div class="container" style="width: 80vh;">
+                    <div class="row d-flex justify-content-center">
+                      <div><h2>Appetizer</h2></div>
+                    </div>
+                    <div class="row">
+                      <div class="col">Food</div>
+                      <div class="col">Price</div>
+                      <div class="col d-flex justify-content-start">Quantity</div>
+                      <div class="w-100"></div>
+    
+                      <div class="col">Potato skin</div>
+                      <div class="col">$5</div>
+                      <div class="col d-flex justify-content-start"><input class="menu-item appetizer-menu" type="number" id="qty-potato-skin" value="0" min="0"></div>
+                      <div class="w-100"></div>
+    
+                      <div class="col">Pigs in blanket</div>
+                      <div class="col">$7</div>
+                      <div class="col d-flex justify-content-start"><input class="menu-item appetizer-menu" type="number" id="qty-pigs-in-blanket" value="0" min="0"></div>
+                      <div class="w-100"></div>
+    
+                      <div class="col">Spinach N' Artichoke dip</div>
+                      <div class="col">$9</div>
+                      <div class="col d-flex justify-content-start"><input class="menu-item appetizer-menu" type="number" id="qty-spinach" value="0" min="0"></div>
+                      <div class="w-100"></div>
+    
+                      <div class="col">Eggs in soy broth</div>
+                      <div class="col">$10</div>
+                      <div class="col d-flex justify-content-start"><input class="menu-item appetizer-menu" type="number" id="qty-eggs" value="0" min="0"></div>
+                      <div class="w-100"></div>
+                    </div>
+                    <hr>
+                    <div class="row d-flex justify-content-center">
+                      <div><h2>Main</h2></div>
+                    </div>                
+                    <div class="row">
+                      <div class="col">Food</div>
+                      <div class="col">Price</div>
+                      <div class="col d-flex justify-content-start">Quantity</div>
+                      <div class="w-100"></div>
+    
+                      <div class="col">Steak and Shrimp</div>
+                      <div class="col">$17</div>
+                      <div class="col d-flex justify-content-start"><input class="menu-item main-menu" type="number" id="qty-steak" value="0" min="0"></div>
+                      <div class="w-100"></div>
+    
+                      <div class="col">Patridge</div>
+                      <div class="col">$15</div>
+                      <div class="col d-flex justify-content-start"><input class="menu-item main-menu" type="number" id="qty-steak" value="0" min="0"></div>
+                      <div class="w-100"></div>
+    
+                      <div class="col">Pizza</div>
+                      <div class="col">$17</div>
+                      <div class="col d-flex justify-content-start"><input class="menu-item main-menu" type="number" id="qty-pizza" value="0" min="0"></div>
+                      <div class="w-100"></div>
+    
+                      <div class="col">Cheeseburger</div>
+                      <div class="col">$13</div>
+                      <div class="col d-flex justify-content-start"><input class="menu-item main-menu" type="number" id="qty-burger" value="0" min="0"></div>
+                      <div class="w-100"></div>
+                    </div>
+                    
+                    <hr>
+    
+                    <div class="row  d-flex justify-content-center">
+                      <div><h2>Desserts</h2></div>
+                    </div>                
+                    <div class="row">
+                      <div class="col">Food</div>
+                      <div class="col">Price</div>
+                      <div class="col d-flex justify-content-start">Quantity</div>
+                      <div class="w-100"></div>
+    
+                      <div class="col">Chocolate Mousse Cake</div>
+                      <div class="col">$12</div>
+                      <div class="col d-flex justify-content-start"><input class="menu-item appetizer-menu" type="number" id="qty-mousse-cake" value="0" min="0"></div>
+                      <div class="w-100"></div>
+    
+                      <div class="col">Molten Cake</div>
+                      <div class="col">$8</div>
+                      <div class="col d-flex justify-content-start"><input class="menu-item desserts-menu" type="number" id="qty-molten-cake" value="0" min="0"></div>
+                      <div class="w-100"></div>
+    
+                      <div class="col">Hot Fudge Sundae</div>
+                      <div class="col">$11</div>
+                      <div class="col d-flex justify-content-start"><input class="menu-item desserts-menu" type="number" id="qty-fudge" value="0" min="0"></div>
+                      <div class="w-100"></div>
+    
+                      <div class="col">Carmel Cake</div>
+                      <div class="col">$13</div>
+                      <div class="col d-flex justify-content-start"><input class="menu-item desserts-menu" type="number" id="qty-carmel-cake" value="0" min="0"></div>
+                      <div class="w-100"></div>
+                    </div>
+                    <hr>
+                    <div class="row d-flex justify-content-center">
+                      <div class="col">Total amount</div>
+                      <div class="col">$ <span id="result">0</span></div>
+                      <div class="col d-flex justify-content-start"><button type="button" class="btn btn-sm btn-dark" onclick="calculate()">sum</button></div>
+                    </div>
+    
+                  
+                
+                <br><br>
+                <p>Please Set your locations</p>
+                <input type="textbox" id = "location">
+                <p>Please Set your City</p>
+                <input type="textbox" id = "city">
+                <p>Please Write down your card number</p>
+                <input type="textbox" id = "cardNumber">
+                <br>
+                <br>        
+                <input type="button" value="Complete Order" style="height: 100px; width: 200px;" onclick="info()">
+            </div>
+        </div> 
+            </center>
             
             
             
@@ -87,6 +206,7 @@
         firebase.analytics();
         </script>
         <script src="../script/database.js"></script>
+        <script src = "../script/order.js"></script>
     </body>
     
 </html>
