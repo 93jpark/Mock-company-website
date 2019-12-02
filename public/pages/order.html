@@ -61,11 +61,11 @@
                 <hr>
                 <br>
                 <center>
-                  <div class="container" style="width: 80vh;">
+                  <div class="container" style="width: 60%;">
                     <div class="row d-flex justify-content-center">
                       <div><h2>Appetizer</h2></div>
                     </div>
-                    <div class="row">
+                    <div class="row menus">
                       <div class="col">Food</div>
                       <div class="col">Price</div>
                       <div class="col d-flex justify-content-start">Quantity</div>
@@ -95,7 +95,7 @@
                     <div class="row d-flex justify-content-center">
                       <div><h2>Main</h2></div>
                     </div>                
-                    <div class="row">
+                    <div class="row menus">
                       <div class="col">Food</div>
                       <div class="col">Price</div>
                       <div class="col d-flex justify-content-start">Quantity</div>
@@ -127,7 +127,7 @@
                     <div class="row  d-flex justify-content-center">
                       <div><h2>Desserts</h2></div>
                     </div>                
-                    <div class="row">
+                    <div class="row menus">
                       <div class="col">Food</div>
                       <div class="col">Price</div>
                       <div class="col d-flex justify-content-start">Quantity</div>
@@ -157,24 +157,31 @@
                     <div class="row d-flex justify-content-center">
                       <div class="col">Total amount</div>
                       <div class="col">$ <span id="result">0</span></div>
-                      <div class="col d-flex justify-content-start"><button type="button" class="btn btn-sm btn-dark" onclick="calculate()">sum</button></div>
+                      <div class="col d-flex justify-content-start"><button type="button" class="btn btn-sm btn-dark" onclick="calculate()">calculate</button></div>
                     </div>
                     <br>
                     <p>* If you used coupon (or buying product at 13th day of month), discount will be applied automatically at final step of order processes</p>
-    
-                  
-                
-                <br><br>
-                <p>Please Set your locations</p>
-                <input type="textbox" id = "location">
-                <p>Please Set your City</p>
-                <input type="textbox" id = "city">
-                <p>Please Write down your card number</p>
-                <input type="textbox" id = "cardNumber">
+                    <div class="container infos"><br>
+                <div class="row d-flex justify-content-center">
+                  <div class="col">Location </div>
+                  <div class="col"><input type="textbox" id = "location" placeholder="location"></div>
+                  <div class="w-100"></div>
+                </div>
                 <br>
-                <br>        
-                <input type="button" value="Complete Order" style="height: 100px; width: 200px;" onclick="info()">
-
+                <div class="row d-flex justify-content-center">
+                  <div class="col">City </div>
+                  <div class="col"><input type="textbox" id = "city" placeholder="city"></div>
+                  <div class="w-100"></div>
+                </div>
+                <br>
+                <div class="row d-flex justify-content-center">
+                  <div class="col">Payment Information </div>
+                  <div class="col"><input type="textbox" id = "cardNumber" placeholder="card number"></div>
+                  <div class="w-100"></div>
+                </div>
+                <br>
+                <button type="button" value="Complete Order" class="btn btn-lg btn-primary btn-block" onclick="info()">CheckOut</button><br></div>
+                <br><br>
             </div>
         </div> 
             </center>

@@ -1,0 +1,26 @@
+.menu-item {
+    width: 50px;
+}
+
+
+.menus {
+    padding: 10px;
+    background-color: lightgrey;
+    border-radius: 5px;
+}
+
+
+.menus .col {
+    padding-bottom: 10px;
+}
+
+.row {
+    min-width: 300px;
+}
+
+.infos {
+    padding: 10px;
+    background-color: lightgoldenrodyellow;
+    border-radius: 5px;
+    
+}
