@@ -29,8 +29,13 @@
     padding: 10px;
 }
 
+.image img {
+    width: 90%;
+}
+    
 .flexbox-row-container > div:first-child {
-    margin-right: 20px;
+    margin-right: -1%;
+    width: 40%;
 }
 
 .flexbox-row-container:nth-child(2) {
@@ -39,8 +44,4 @@
 
 .flexbox-row-container .description {
     padding-top: 10%;
-}
-
-.flexbox-row-container .image {
-    width: 30%;
 }

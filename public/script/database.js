@@ -12,9 +12,11 @@ if(this.getCookie("userName")===""){
     console.log("user logged-in");
 }
 
-if(this.getCookie("userName")==="admin"){
+if(this.getCookie("userName")=="admin"){
     document.querySelector("#admin_link").style.visibility="visible";
 
+} else {
+    document.querySelector("#admin_link").style.visibility="hidden";
 }
 
 var member = {
